@@ -27,8 +27,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('/books', 'BooksController');
 });
 ```
-4. f
+3. f
+4. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDAyNTIzNzIsLTk0NjMyNzY1NF19
+eyJoaXN0b3J5IjpbLTE4OTYxMDA5MTEsLTk0NjMyNzY1NF19
 -->
