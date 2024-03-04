@@ -28,6 +28,7 @@ Route::middleware(['auth'],['can:admin.book'])->group( function () {
 });
 ```
 3. Dùng request để validate
+
 php artisan make:request CreateBookRequest
 php artisan make:request EditBookRequest
 trong controller
@@ -206,5 +207,6 @@ class BooksController extends ApiController
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyODE1MDUwNSwtOTQ2MzI3NjU0XX0=
+eyJoaXN0b3J5IjpbMTE4NDc5MzQ0OSwtOTI4MTUwNTA1LC05ND
+YzMjc2NTRdfQ==
 -->
