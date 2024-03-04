@@ -18,7 +18,8 @@ F --> G["Response (JSON)"]	--> client
 -   Tương tác với database: Sử dụng repository, inject vào service.
 
 ## Ví dụ
+CRUD liên quan tới Book (title, author)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNjk0MjU1MiwtOTQ2MzI3NjU0XX0=
+eyJoaXN0b3J5IjpbNDYzMTI0MDcsLTk0NjMyNzY1NF19
 -->
