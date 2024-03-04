@@ -21,15 +21,17 @@ F --> G["Response (JSON)"]	--> client
 CRUD liên quan tới Book (title, author)
 
 1. Tạo migration, controller, model và route
-2. Áp middleware cho Authentication
+2. Áp middleware cho Authentication và authorize (nếu có)
 ```php
 Route::group(['middleware' => 'auth'], function () {
     Route::resource('/books', 'BooksController');
 });
 ```
-3. f
+3. Dùng request để validate
+php artisan make:request CreateBookRequest
+php artisan make:request EditBookRequest
 4. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTYxMDA5MTEsLTk0NjMyNzY1NF19
+eyJoaXN0b3J5IjpbMTc1NDQzODU0MCwtOTQ2MzI3NjU0XX0=
 -->
