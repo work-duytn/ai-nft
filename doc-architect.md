@@ -17,7 +17,8 @@ F --> G["Response (JSON)"]	--> client
 -   Process Raw data: tách ra thành các class riêng gọi là services -> nhớ luôn phải tạo interface và inject interface đó vào trong controller 
 -   Tương tác với database: Sử dụng repository, inject vào service.
 
+## Ví dụ
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NDI3Nzc4MCwtOTQ2MzI3NjU0XX0=
+eyJoaXN0b3J5IjpbMTkzNjk0MjU1MiwtOTQ2MzI3NjU0XX0=
 -->
