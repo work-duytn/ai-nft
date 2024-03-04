@@ -11,10 +11,6 @@ D --> E["Process Raw Request Data"]
 E --> F["Update Database"]
 F --> G["Response (JSON)"]	--> client
 ```
-
-
->
-
 -   Check Authen: sử dụng middleware mặc định của Laravel
 -   Check Authorization: đơn giản nhất sử dụng [ACL](https://laravel.com/docs/10.x/authorization) mặc định của Laravel 
 -   Validation: sử dụng [Form Request](https://laravel.com/docs/10.x/validation#form-request-validation) của Laravel 
@@ -22,7 +18,6 @@ F --> G["Response (JSON)"]	--> client
 -   Tương tác với database: Sử dụng repository, inject vào service.
 
 
-> Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NjkwNDA0LC05NDYzMjc2NTRdfQ==
+eyJoaXN0b3J5IjpbMjA1NDI3Nzc4MCwtOTQ2MzI3NjU0XX0=
 -->
