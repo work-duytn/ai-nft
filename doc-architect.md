@@ -3,7 +3,7 @@ kiến trúc code là gì?
 > Theo mình, nó đơn giản lắm, chỉ là cách sắp đặt code để đạt được 1 mục đích nhất định.
 
 # xử lý 1 request thông thường
->Request -> check authen -> check author -> validation -> process raw request data -> update database -> Response
+>Request -> check authen -> check author -> validation -> process raw request data -> update database -> Response ( json)
 >
 ```mermaid
 classDiagram
@@ -23,5 +23,5 @@ Class08 <--> C2: Cool label
 ```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyOTk1ODU0M119
+eyJoaXN0b3J5IjpbLTM1MDA1Mjk2Nl19
 -->
