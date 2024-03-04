@@ -20,6 +20,15 @@ F --> G["Response (JSON)"]	--> client
 ## Ví dụ
 CRUD liên quan tới Book (title, author)
 
+1. Tạo migration, controller, model và route
+2. Áp middleware cho Authentication
+```php
+Route::group(['middleware' => 'auth'], function () {
+    Route::resource('/books', 'BooksController');
+});
+```
+4. f
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MDg2MTU1MCwtOTQ2MzI3NjU0XX0=
+eyJoaXN0b3J5IjpbLTEzMDAyNTIzNzIsLTk0NjMyNzY1NF19
 -->
