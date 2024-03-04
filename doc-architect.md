@@ -1,4 +1,6 @@
 # heloworld 
+kiến trúc code là gì?
+> Theo mình, nó đơn giản lắm, chỉ là cách sắp đặt code để đạt được 1 mục đích nhất định.
 
 ```mermaid
 classDiagram
@@ -18,5 +20,5 @@ Class08 <--> C2: Cool label
 ```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMzODc4MzQ1XX0=
+eyJoaXN0b3J5IjpbMjcwMTA1NjM4XX0=
 -->
