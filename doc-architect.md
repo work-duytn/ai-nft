@@ -8,7 +8,7 @@ A[Request] --> B[Check Authentication]
 B --> C[Check Author]
 C --> D[Validation]
 D --> E["Process Raw Request Data(service)"]
-E --> F["Update Database"]
+E --> F["Update Database(repository)"]
 F --> G["Response (JSON)"]	--> client
 ```
 -   Check Authen: sử dụng middleware mặc định của Laravel
@@ -21,5 +21,5 @@ F --> G["Response (JSON)"]	--> client
 CRUD liên quan tới Book (title, author)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTc5MTMzNjcsLTk0NjMyNzY1NF19
+eyJoaXN0b3J5IjpbLTY3MDg2MTU1MCwtOTQ2MzI3NjU0XX0=
 -->
