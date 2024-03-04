@@ -23,7 +23,7 @@ CRUD liên quan tới Book (title, author)
 1. Tạo migration, controller, model và route
 2. Áp middleware cho Authentication và authorize (nếu có)
 ```php
-Route::middleware(['auth'])->group( function () {
+Route::middleware(['auth'],['can:admin.book'])->group( function () {
     Route::resource('/books', 'BooksController');
 });
 ```
@@ -33,5 +33,5 @@ php artisan make:request EditBookRequest
 4. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MTcyOTEzNywtOTQ2MzI3NjU0XX0=
+eyJoaXN0b3J5IjpbMTQxNTM4MjQ5LC05NDYzMjc2NTRdfQ==
 -->
