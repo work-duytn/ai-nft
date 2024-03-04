@@ -1,10 +1,12 @@
-# heloworld 
-kiến trúc code là gì?
-> Theo mình, nó đơn giản lắm, chỉ là cách sắp đặt code để đạt được 1 mục đích nhất định.
-
 # xử lý 1 request thông thường
 >Request -> check authen -> check author -> validation -> process raw request data -> update database -> Response ( json)
->
+
+-   Check Authen: sử dụng middleware mặc định của Laravel
+-   Check Authorization: đơn giản nhất sử dụng ACL mặc định của Laravel hoặc các package nổi tiếng về Authorization (các bạn xem lại phần 8 nhé)
+-   Validation: sử dụng Request của Laravel hoặc sử dụng [Ardent](https://github.com/laravel-ardent/ardent)
+-   Process Raw data: tách ra thành các class riêng gọi là services -> nhớ luôn phải tạo interface và inject interface đó vào trong controller nhé
+-   Tương tác với database: Sử dụng repository, inject vào service.
+
 ```mermaid
 classDiagram
 Class01 <|-- AveryLongClass : Cool
@@ -23,5 +25,5 @@ Class08 <--> C2: Cool label
 ```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MDA1Mjk2Nl19
+eyJoaXN0b3J5IjpbLTM1MDg4MDMwMl19
 -->
