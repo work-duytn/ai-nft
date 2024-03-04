@@ -30,8 +30,26 @@ Route::middleware(['auth'],['can:admin.book'])->group( function () {
 3. Dùng request để validate
 php artisan make:request CreateBookRequest
 php artisan make:request EditBookRequest
-4. 
+trong controller
+```php
+public function store(CreateBookRequest $request)
+public function update(EditBookRequest $request, $id)
+```
+4. Tạo Repository
+- interface
+```php
+interface BookRepositoryContract
+{
+    public function paginate();
+    public function find($id);
+    public function store($data);
+    public function update($id, $data);
+    public function destroy($id);
+}
+```
+- repository
+5. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNTM4MjQ5LC05NDYzMjc2NTRdfQ==
+eyJoaXN0b3J5IjpbLTEyNjY4NDc1NjIsLTk0NjMyNzY1NF19
 -->
