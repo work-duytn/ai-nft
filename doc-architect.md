@@ -189,7 +189,7 @@ class BooksController extends ApiController
     public function show($id)
     {
         $item = $this->service->find($id);
-        return view('books.show', compact('item'));
+        return $this->responseSuccess(200, $item);
     }
 
     public function edit($id)
@@ -213,5 +213,5 @@ class BooksController extends ApiController
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA1MzM0Mjg0LC05NDYzMjc2NTRdfQ==
+eyJoaXN0b3J5IjpbNjg3MzM5MDM1LC05NDYzMjc2NTRdfQ==
 -->
