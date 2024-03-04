@@ -38,6 +38,7 @@ public function update(EditBookRequest $request, $id)
 4. Tạo Repository
 - interface
 ```php
+namespace Core\Repositories;
 interface BookRepositoryContract
 {
     public function paginate();
@@ -49,6 +50,7 @@ interface BookRepositoryContract
 ```
 - repository
 ```php
+namespace Core\Repositories;
 class BookRepository implements BookRepositoryContract
 {
     protected $model;
@@ -178,8 +180,6 @@ class BooksController extends ApiController
         $items = $this->service->paginate();
         return $this->responseSuccess($item);
     }
-
-
     public function store(CreateBookRequest $request)
     {
         $this->service->store($request->all());
@@ -206,5 +206,5 @@ class BooksController extends ApiController
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI5MjIxMzY3LC05NDYzMjc2NTRdfQ==
+eyJoaXN0b3J5IjpbLTkyODE1MDUwNSwtOTQ2MzI3NjU0XX0=
 -->
