@@ -107,6 +107,49 @@ interface BookServiceContract
     public function destroy($id);
 }
 ```
+```php
+<?php
+
+namespace Core\Services;
+
+use Core\Repositories\BookRepositoryContract;
+
+class BookService implements BookServiceContract
+{
+    protected $repository;
+
+    public function __construct(BookRepositoryContract $repository)
+    {
+        return $this->repository = $repository;
+    }
+
+    public function paginate()
+    {
+        return $this->repository->paginate();
+    }
+
+    public function find($id)
+    {
+        return $this->repository->find($id);
+    }
+
+    public function store($data)
+    {
+        return $this->repository->store($data);
+    }
+
+    public function update($id, $data)
+    {
+        return $this->repository->update($id, $data);
+    }
+
+    public function destroy($id)
+    {
+        return $this->repository->destroy($id);
+    }
+
+}
+```
 6.  Chỉnh sửa BooksController để nhúng service vào
 ```php
 <?php
@@ -172,5 +215,5 @@ class BooksController extends Controller
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcyNDE0ODU3LC05NDYzMjc2NTRdfQ==
+eyJoaXN0b3J5IjpbMjQ4MjM0NDk1LC05NDYzMjc2NTRdfQ==
 -->
