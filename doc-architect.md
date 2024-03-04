@@ -163,7 +163,7 @@ use App\Http\Requests\EditBookRequest;
 use Core\Services\BookServiceContract;
 use App\Http\Requests\CreateBookRequest;
 
-class BooksController extends Controller
+class BooksController extends ApiController
 {
     protected $service;
 
@@ -176,7 +176,7 @@ class BooksController extends Controller
     public function index()
     {
         $items = $this->service->paginate();
-        return view('books.index', compact("items"));
+        return $this->responseSuccess(200, $item);
     }
 
     public function create()
@@ -217,5 +217,5 @@ class BooksController extends Controller
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4ODQ3ODI1NCwtOTQ2MzI3NjU0XX0=
+eyJoaXN0b3J5IjpbLTI3NjExMzA3MSwtOTQ2MzI3NjU0XX0=
 -->
