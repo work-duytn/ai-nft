@@ -179,15 +179,11 @@ class BooksController extends ApiController
         return $this->responseSuccess(200, $item);
     }
 
-    public function create()
-    {
-        return view('books.create');
-    }
 
     public function store(CreateBookRequest $request)
     {
         $this->service->store($request->all());
-        return redirect()->route('books.index');
+      return $this->responseSuccess(200);
     }
 
     public function show($id)
@@ -217,5 +213,5 @@ class BooksController extends ApiController
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NjExMzA3MSwtOTQ2MzI3NjU0XX0=
+eyJoaXN0b3J5IjpbODA1MzM0Mjg0LC05NDYzMjc2NTRdfQ==
 -->
