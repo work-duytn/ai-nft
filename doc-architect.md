@@ -2,13 +2,8 @@
 
 
 ```mermaid
-graph LR
-	A[Request] --> B{Check Authentication}
-	B --> C{Check Author}
-	C --> D{Validation}
-	D --> E{Process Raw Request Data}
-	E --> F{Update Database}
-	F --> G{Response (JSON)}
+flowchart LR
+	A[Request] 
 
 	
 ```
@@ -25,5 +20,5 @@ graph LR
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MjU1Mzg0OCwtOTQ2MzI3NjU0XX0=
+eyJoaXN0b3J5IjpbMjAwNTcwMjkzNywtOTQ2MzI3NjU0XX0=
 -->
