@@ -7,7 +7,7 @@ client-->A
 A[Request] --> B[Check Authentication]
 B --> C[Check Author]
 C --> D[Validation]
-D --> E["Process Raw Request Data"]
+D --> E["Process Raw Request Data(service)"]
 E --> F["Update Database"]
 F --> G["Response (JSON)"]	--> client
 ```
@@ -21,5 +21,5 @@ F --> G["Response (JSON)"]	--> client
 CRUD liên quan tới Book (title, author)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYzMTI0MDcsLTk0NjMyNzY1NF19
+eyJoaXN0b3J5IjpbLTEwNTc5MTMzNjcsLTk0NjMyNzY1NF19
 -->
