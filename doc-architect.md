@@ -2,8 +2,9 @@
 kiến trúc code là gì?
 > Theo mình, nó đơn giản lắm, chỉ là cách sắp đặt code để đạt được 1 mục đích nhất định.
 
-# việc xử lý 1 request 
-
+# xử lý 1 request thông thường
+>Request -> check authen -> check author -> validation -> process raw request data -> update database -> Response
+>
 ```mermaid
 classDiagram
 Class01 <|-- AveryLongClass : Cool
@@ -22,5 +23,5 @@ Class08 <--> C2: Cool label
 ```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODE0OTY3NThdfQ==
+eyJoaXN0b3J5IjpbLTYyOTk1ODU0M119
 -->
