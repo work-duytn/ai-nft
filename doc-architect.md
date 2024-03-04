@@ -149,6 +149,11 @@ class BookService implements BookServiceContract
 
 }
 ```
+
+bind trong app service provider
+```php
+$this->app->bind(BookServiceContract::class, BookService::class);
+```
 6.  Chỉnh sửa BooksController để nhúng service vào
 ```php
 namespace App\Http\Controllers;
@@ -212,5 +217,5 @@ class BooksController extends Controller
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2Nzc4NjU1NCwtOTQ2MzI3NjU0XX0=
+eyJoaXN0b3J5IjpbLTY4ODQ3ODI1NCwtOTQ2MzI3NjU0XX0=
 -->
