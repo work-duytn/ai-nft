@@ -3,7 +3,12 @@
 
 ```mermaid
 flowchart LR
-	A[Request] 
+	A[Request] --> B[Check Authentication]
+	B --> C[Check Author]
+	C --> D[Validation]
+	D --> E[Process Raw Request Data]
+	E --> F[Update Database]
+	F --> G[Response (JSON)]
 
 	
 ```
@@ -20,5 +25,5 @@ flowchart LR
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNTcwMjkzNywtOTQ2MzI3NjU0XX0=
+eyJoaXN0b3J5IjpbMTQwODk3MTI4NiwtOTQ2MzI3NjU0XX0=
 -->
