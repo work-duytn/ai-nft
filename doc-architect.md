@@ -2,15 +2,14 @@
 
 
 ```mermaid
-flowchart LR
-	A[Request] --> B[Check Authentication]
-	B --> C[Check Author]
-	C --> D[Validation]
-	D --> E[Process Raw Request Data]
-	E --> F[Update Database]
-	F --> G[Response (JSON)]
-
-	
+flowchart TB
+client-->A
+A[Request] --> B[Check Authentication]
+B --> C[Check Author]
+C --> D[Validation]
+D --> E["Process Raw Request Data"]
+E --> F["Update Database"]
+F --> G["Response (JSON)"]	--> client
 ```
 
 
@@ -25,5 +24,5 @@ flowchart LR
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwODk3MTI4NiwtOTQ2MzI3NjU0XX0=
+eyJoaXN0b3J5IjpbLTIwNTQxNjQ3MzUsLTk0NjMyNzY1NF19
 -->
