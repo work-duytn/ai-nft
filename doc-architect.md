@@ -2,16 +2,19 @@
 
 
 ```mermaid
----
-title: Node with text
----
-flowchart LR
-    id1[This is the text in the box]
+graph LR
+	A[Request] --> B{Check Authentication}
+	B --> C{Check Author}
+	C --> D{Validation}
+	D --> E{Process Raw Request Data}
+	E --> F{Update Database}
+	F --> G{Response (JSON)}
+
 	
 ```
 
 
->Request -> check authen -> check author -> validation -> process raw request data -> update database -> Response ( json)
+>
 
 -   Check Authen: sử dụng middleware mặc định của Laravel
 -   Check Authorization: đơn giản nhất sử dụng [ACL](https://laravel.com/docs/10.x/authorization) mặc định của Laravel 
@@ -22,5 +25,5 @@ flowchart LR
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyMjQ1MjY0MywtOTQ2MzI3NjU0XX0=
+eyJoaXN0b3J5IjpbMTQ5MjU1Mzg0OCwtOTQ2MzI3NjU0XX0=
 -->
