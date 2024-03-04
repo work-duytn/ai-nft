@@ -92,9 +92,24 @@ class BookRepository implements BookRepositoryContract
 $this->app->bind(BookRepositoryContract::class, BookRepository::class);
 
 ```
-- 
-5. 
+5.  Tạo Services
+```php
+<?php
+
+namespace Core\Services;
+
+interface BookServiceContract
+{
+    public function paginate();
+    public function find($id);
+    public function store($data);
+    public function update($id, $data);
+    public function destroy($id);
+}
+```
+6. 
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUxODkwNTc1LC05NDYzMjc2NTRdfQ==
+eyJoaXN0b3J5IjpbLTE3Mjg5ODI1MDEsLTk0NjMyNzY1NF19
 -->
