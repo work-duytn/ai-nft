@@ -3,7 +3,7 @@
 
 -   Check Authen: sử dụng middleware mặc định của Laravel
 -   Check Authorization: đơn giản nhất sử dụng ACL mặc định của Laravel hoặc các package nổi tiếng về Authorization (các bạn xem lại phần 8 nhé)
--   Validation: sử dụng Request của Laravel hoặc sử dụng [Ardent](https://github.com/laravel-ardent/ardent)
+-   Validation: sử dụng [Form Request](https://laravel.com/docs/10.x/validation#form-request-validation) của Laravel 
 -   Process Raw data: tách ra thành các class riêng gọi là services -> nhớ luôn phải tạo interface và inject interface đó vào trong controller nhé
 -   Tương tác với database: Sử dụng repository, inject vào service.
 
@@ -25,5 +25,5 @@ Class08 <--> C2: Cool label
 ```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MDg4MDMwMl19
+eyJoaXN0b3J5IjpbLTk0NjMyNzY1NF19
 -->
