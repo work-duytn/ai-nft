@@ -94,8 +94,6 @@ $this->app->bind(BookRepositoryContract::class, BookRepository::class);
 ```
 5.  Tạo Services
 ```php
-<?php
-
 namespace Core\Services;
 
 interface BookServiceContract
@@ -107,8 +105,9 @@ interface BookServiceContract
     public function destroy($id);
 }
 ```
+Tạo mới class core/Services/BookService.php
 ```php
-<?php
+
 
 namespace Core\Services;
 
@@ -152,8 +151,6 @@ class BookService implements BookServiceContract
 ```
 6.  Chỉnh sửa BooksController để nhúng service vào
 ```php
-<?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -215,5 +212,5 @@ class BooksController extends Controller
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ4MjM0NDk1LC05NDYzMjc2NTRdfQ==
+eyJoaXN0b3J5IjpbLTU2Nzc4NjU1NCwtOTQ2MzI3NjU0XX0=
 -->
