@@ -176,42 +176,35 @@ class BooksController extends ApiController
     public function index()
     {
         $items = $this->service->paginate();
-        return $this->responseSuccess(200, $item);
+        return $this->responseSuccess($item);
     }
 
 
     public function store(CreateBookRequest $request)
     {
         $this->service->store($request->all());
-      return $this->responseSuccess(200);
+      return $this->responseSuccess();
     }
 
     public function show($id)
     {
         $item = $this->service->find($id);
-        return $this->responseSuccess(200, $item);
-    }
-
-    public function edit($id)
-    {
-        $item = $this->service->find($id);
-        return view('books.edit', compact('item'));
+        return $this->responseSuccess($item);
     }
 
     public function update(EditBookRequest $request, $id)
     {
         $this->service->update($id, $request->all());
-        return redirect()->route('books.index');
+	    return $this->responseSuccess();
     }
 
     public function destroy($id)
     {
-        $this->service->destroy($id);
-        return redirect()->route('books.index');
+	  return $this->responseSuccess();
     }
 }
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg3MzM5MDM1LC05NDYzMjc2NTRdfQ==
+eyJoaXN0b3J5IjpbMzI5MjIxMzY3LC05NDYzMjc2NTRdfQ==
 -->
