@@ -153,7 +153,7 @@ class BookService implements BookServiceContract
 }
 ```
 
-bind trong app service provider
+-   bind trong service provider (tạm gọi là core)
 ```php
 $this->app->bind(BookServiceContract::class, BookService::class);
 ```
@@ -207,6 +207,6 @@ class BooksController extends ApiController
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NDc5MzQ0OSwtOTI4MTUwNTA1LC05ND
+eyJoaXN0b3J5IjpbMTQ5MTU3MzY5MCwtOTI4MTUwNTA1LC05ND
 YzMjc2NTRdfQ==
 -->
